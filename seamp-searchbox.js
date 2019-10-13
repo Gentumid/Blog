@@ -1,1 +1,20 @@
-var fixedsearchbox=function(h){var f,d,m,k=h(document.documentElement),b=null!=navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i),p=b?"touchstart":"click",j=100,g=27,l={init:function(){f=h("#ddsearchcontainer"),d=h("#search-terms"),m=h("#search-label"),m.on(p,function(a){f.css("top","px"),k.toggleClass("opensearch"),k.hasClass("opensearch")?(f.css("zIndex",j++),d.focus()):d.blur(),a.preventDefault(),a.stopPropagation()}),d.on(p,function(a){a.stopPropagation()}),h(document).on(p+" keyup",function(a){"keyup"==a.type&&a.keyCode!=g||(k.removeClass("opensearch"),d.blur())})}};return l}(jQuery);fixedsearchbox.init();
+var fixedsearchbox = function (e) {
+    var n, o, t, a = e(document.documentElement),
+        r = null != navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i),
+        s = r ? "touchstart" : "click",
+        c = 100,
+        i = 27,
+        u = {
+            init: function () {
+                n = e("#ddsearchcontainer"), o = e("#search-terms"), t = e("#search-label"), t.on(s, function (e) {
+                    n.css("top", "px"), a.toggleClass("opensearch"), a.hasClass("opensearch") ? (n.css("zIndex", c++), o.focus()) : o.blur(), e.preventDefault(), e.stopPropagation()
+                }), o.on(s, function (e) {
+                    e.stopPropagation()
+                }), e(document).on(s + " keyup", function (e) {
+                    "keyup" == e.type && e.keyCode != i || (a.removeClass("opensearch"), o.blur())
+                })
+            }
+        };
+    return u
+}(jQuery);
+fixedsearchbox.init();
