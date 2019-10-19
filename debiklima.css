@@ -1,1 +1,3 @@
-h1.post-title.entry-title,h2.post-title.entry-title,h3.post-title.entry-title,h4.post-title.entry-title{color:#138be6;padding:15px;font-size:24px;margin:0;border-bottom:1px solid rgba(0,0,0,0.14)}#sidebar-wrapper,#comments,#disqusshow,#disqus_thread,.comments-line,.comments-line-c{display:none}#main-wrapper{width:100%;float:none;border:0}
+h1.post-title.entry-title,h2.post-title.entry-title,h3.post-title.entry-title,h4.post-title.entry-title{color:#138be6;padding:15px;font-size:24px;margin:0;border-bottom:1px solid rgba(0,0,0,0.14);}
+#sidebar-wrapper,#comments,#disqusshow,#disqus_thread,.comments-line,.comments-line-c{display:none;}
+#main-wrapper {width:100%;float:none;border:0;}
