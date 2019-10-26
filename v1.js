@@ -1,1 +1,27 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('d a=2.s("B");a.P="N/K";a.J="7://I.L.8/O/H/u/3.4.1/u.C.G";a.D=F;a.E=e(){M();$(2).S(e(){r $(2).q()>Z?$(".c").Y("t"):$(".c").10("t")}),$(".c").11(e(){r $("12,R").T({q:"0"})})};2.U("Q")[0].z(a);d 6=2.y("6 .v .A"),x="9 b f <a h=\\"7://p.n.8\\" o=\\"l,m\\" i=\\"j\\" k=\\"5\\">5</a>";w(!6){d a=2.s("13");a.V="A";a.g="9 b f <a h=\\"7://p.n.8\\" o=\\"l,m\\" i=\\"j\\" k=\\"5\\">5</a>";2.y("6 .v").z(a)}W{w(!6.g.X(x)){6.g="9 b f <a h=\\"7://p.n.8\\" o=\\"l,m\\" i=\\"j\\" k=\\"5\\">5</a>"}}',62,66,'||document|||Igniel|footer|https|com|Tema||Blogger|ignielToTop|let|function|oleh|innerHTML|href|target|_blank|title|noopener|nofollow|igniel|rel|www|scrollTop|return|createElement|show|jquery|inner|if|cr|querySelector|appendChild|right|script|min|async|onload|true|js|libs|cdnjs|src|javascript|cloudflare|textrim|text|ajax|type|head|body|scroll|animate|getElementsByTagName|className|else|includes|addClass|300|removeClass|click|html|div'.split('|'),0,{}))
+let a = document.createElement("script");
+a.type = "text/javascript";
+a.src = "";
+a.async = true;
+a.onload = function () {
+    textrim();
+    $(document).scroll(function () {
+        return $(document).scrollTop() > 300 ? $(".ignielToTop").addClass("show") : $(".ignielToTop").removeClass("show")
+    }), $(".ignielToTop").click(function () {
+        return $("html,body").animate({
+            scrollTop: "0"
+        })
+    })
+};
+document.getElementsByTagName("head")[0].appendChild(a);
+let footer = document.querySelector("footer .inner .right"),
+    cr = "Tema oleh <a href=\"https://www.igniel.com\" rel=\"noopener,nofollow\" target=\"_blank\" title=\"Igniel\">Igniel</a>";
+if (!footer) {
+    let a = document.createElement("div");
+    a.className = "right";
+    a.innerHTML = "Tema oleh <a href=\"https://www.igniel.com\" rel=\"noopener,nofollow\" target=\"_blank\" title=\"Igniel\">Igniel</a>";
+    document.querySelector("footer .inner").appendChild(a)
+} else {
+    if (!footer.innerHTML.includes(cr)) {
+        footer.innerHTML = "Tema oleh <a href=\"https://www.igniel.com\" rel=\"noopener,nofollow\" target=\"_blank\" title=\"Igniel\">Igniel</a>"
+    }
+}
